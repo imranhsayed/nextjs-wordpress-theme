@@ -91,5 +91,6 @@ Thumbs.db
 # Other
 .cache
 .env
+client-config.js
 
 .vercel

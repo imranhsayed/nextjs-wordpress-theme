@@ -8,3 +8,28 @@
 - A React theme for WordPress, using Decoupled Architecture in Next.js
 - Front end in React
 - Backend in WordPress.
+
+### Client config. 
+rename client-config-example.js in packages/gatsby-woocommerce-theme directory to client-config.js and add your WordPress Site URL. 
+
+### WordPress Setup
+* Download, Upload and activate all the plugins from wordpress/plugins folder of this repo, into your WordPress Site.
+
+1. [wp-graphql](https://github.com/imranhsayed/nextjs-wordpress-theme/blob/master/wordpress/plugins/wp-graphql.zip) - tested on ( v1.0.0 )
+
+# Development
+
+```shell script
+npm run dev # Runs next dev which starts Next.js in development mode
+npm run build # Runs next build which builds the application for production usage
+npm run start # Runs next start which starts a Next.js production server
+```
+
+# Cypress Tests
+
+To run cypress locally we run `cypress-open`
+It adds a `cypress` directory and some example test in `cypress/integrations`
+
+```shell script
+npm run cypress:open
+```

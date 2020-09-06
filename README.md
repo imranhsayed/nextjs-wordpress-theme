@@ -25,7 +25,7 @@ npm run build # Runs next build which builds the application for production usag
 npm run start # Runs next start which starts a Next.js production server
 ```
 
-# Cypress Tests
+# [Cypress Tests](https://docs.cypress.io/)
 
 To run cypress locally we run `cypress-open`
 It adds a `cypress` directory and some example test in `cypress/integrations`
@@ -33,3 +33,10 @@ It adds a `cypress` directory and some example test in `cypress/integrations`
 ```shell script
 npm run cypress:open
 ```
+
+* Cypress docs
+1. [API](https://docs.cypress.io/api/api/table-of-contents.html)
+
+## Important concepts
+
+1. [Prerendering](https://nextjs.org/docs/basic-features/pages#pre-rendering)

@@ -9,8 +9,8 @@
 - Front end in React
 - Backend in WordPress.
 
-### Client config. 
-rename client-config-example.js in packages/gatsby-woocommerce-theme directory to client-config.js and add your WordPress Site URL. 
+### Evironment vars. 
+rename .env-example to .env and add your WordPress Site URL. 
 
 ### WordPress Setup
 * Download, Upload and activate all the plugins from wordpress/plugins folder of this repo, into your WordPress Site.

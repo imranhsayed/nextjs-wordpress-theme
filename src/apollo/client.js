@@ -1,17 +1,31 @@
 import { ApolloClient, InMemoryCache, createHttpLink } from "@apollo/client";
-import clientConfig from "../client-config";
+
+const defaultOptions = {
+	watchQuery: {
+		fetchPolicy: 'no-cache',
+		errorPolicy: 'ignore',
+	},
+	query: {
+		fetchPolicy: 'no-cache',
+		errorPolicy: 'all',
+	},
+}
+
 
 /**
  * Instantiate required constructor fields
  */
-const cache = new InMemoryCache();
+const cache = new InMemoryCache({
+	resultCaching: false
+});
 const link = createHttpLink({
-	uri: `${clientConfig.wordPressSiteURL}/graphql`,
+	uri: `${process.env.NEXT_PUBLIC_WORDPRESS_SITE_URL}/graphql`,
 });
 
 const client = new ApolloClient({
 	cache,
 	link,
+	defaultOptions: defaultOptions,
 });
 
 export default client;

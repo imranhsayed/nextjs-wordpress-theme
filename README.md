@@ -16,6 +16,8 @@ rename .env-example to .env and add your WordPress Site URL
 * Download, Upload and activate all the plugins from wordpress/plugins folder of this repo, into your WordPress Site.
 
 1. [wp-graphql](https://github.com/imranhsayed/nextjs-wordpress-theme/blob/master/wordpress/plugins/wp-graphql.zip) - tested on ( v1.0.0 )
+2. [Headless CMS](https://github.com/imranhsayed/nextjs-wordpress-theme/blob/master/wordpress/plugins/headless-cms.zip)
+3. [WP GraphQL Gutenberg](https://github.com/imranhsayed/nextjs-wordpress-theme/blob/master/wordpress/plugins/wp-graphql-gutenberg-0.3.4.zip)
 
 # Development
 

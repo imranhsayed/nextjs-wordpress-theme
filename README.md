@@ -10,7 +10,7 @@
 - Backend in WordPress.
 
 ### Evironment vars. 
-rename .env-example to .env and add your WordPress Site URL. 
+rename .env-example to .env and add your WordPress Site URL
 
 ### WordPress Setup
 * Download, Upload and activate all the plugins from wordpress/plugins folder of this repo, into your WordPress Site.

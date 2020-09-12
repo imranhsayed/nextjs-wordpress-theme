@@ -37,6 +37,14 @@ npm run cypress:open
 * Cypress docs
 1. [API](https://docs.cypress.io/api/api/table-of-contents.html)
 
+## Debugging with Node.js debugger tool. 
+Notice that we have added this in `package.json`
+```shell script
+"dev": "NODE_OPTIONS='--inspect' next",
+```
+when you run `npm run dev`, you will see a node js icon in the Chrome inspector tab and there will also be a url to access it on the terminal
+that says `Debugger listeing on ...`
+
 ## Important concepts
 
 1. [Prerendering](https://nextjs.org/docs/basic-features/pages#pre-rendering)

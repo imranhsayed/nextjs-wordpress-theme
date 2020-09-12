@@ -50,3 +50,24 @@ that says `Debugger listeing on ...`
 ## Important concepts
 
 1. [Prerendering](https://nextjs.org/docs/basic-features/pages#pre-rendering)
+2. Querying blocks:
+[WP GraphQL Gutenberg](https://github.com/imranhsayed/nextjs-wordpress-theme/blob/master/wordpress/plugins/wp-graphql-gutenberg-0.3.4.zip) allows you to query Gutenberg blocks.
+If you want to break down the blocks and render the content using individual React components, here is the query example.
+
+```shell script
+{
+  posts {
+    nodes {
+      title
+      blocks {
+        name
+        innerBlocks {
+          name
+          saveContent
+        }
+        saveContent
+      }
+    }
+  }
+}
+```

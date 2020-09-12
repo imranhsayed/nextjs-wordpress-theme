@@ -4,6 +4,7 @@ import { GET_MENUS } from "../src/queries/get-menus";
 import client from "../src/apollo/client";
 
 const Home = ({ menus }) => {
+
 	return (
 		<Layout menus={menus}>
 			<div
@@ -17,7 +18,7 @@ const Home = ({ menus }) => {
 
 export default Home;
 
-export async function getServerSideProps({}) {
+export async function getStaticProps() {
 	const { data, loading, networkStatus } = await client.query({
 		query: GET_MENUS,
 	});
